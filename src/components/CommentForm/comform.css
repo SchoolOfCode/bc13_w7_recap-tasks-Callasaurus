@@ -1,0 +1,18 @@
+.form {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #942e0b83;
+        border-radius: 200px;
+        -webkit-box-shadow: 1px 12px 92px -29px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: 1px 12px 92px -29px rgba(0, 0, 0, 0.64);
+        margin: 20px;
+        color: black;
+        padding-bottom: 10px;
+        padding-top: 10px;
+}
