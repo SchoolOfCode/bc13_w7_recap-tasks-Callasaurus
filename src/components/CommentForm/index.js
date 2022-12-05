@@ -19,7 +19,7 @@ function CommentForm(props) {
     setText(newText)
   }
 
-  // function that runs the addComment function using the new author and content text as parameters, which will add a new comment to the page 
+  // function that runs the addComment function (which has been passed down as props from App) using the new author and content text as parameters, which will add a new comment to the page 
   function handleSubmit(e) {
     props.handleInput(text.author, text.content);
     // stopping the page reloading on form submit
@@ -34,7 +34,7 @@ function CommentForm(props) {
       Author: <input value={text.author} onChange={handleChangeAuthor} />
       {/* Setting the value of the input box to reflect the current state of the content text, which is being updated by the handleChangeContent function */}
       Comment: <input value={text.content} onChange={handleChangeContent} />
-      {/* running the addComment function (which is passed down from App) on button click so new comment is added */}
+      {/* running the addComment function (which is passed down as props from App) on button click so new comment is added */}
       <button onClick={handleSubmit}>Submit</button>
     </form>
   )

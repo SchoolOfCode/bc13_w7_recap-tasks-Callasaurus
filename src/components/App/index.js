@@ -28,7 +28,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       {/* Using the BlogPost component that is taking in the first post from the blogs.js file and displaying it on the page */}
       <BlogPost />
       {/* Handing down the comment array state to CommentList with the prop key of 'comments' */}
